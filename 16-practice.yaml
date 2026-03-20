@@ -1,7 +1,7 @@
 - name: install nginx
   hosts: local
   connection: local
-  task: 
+  tasks: 
   - name: install nginx
     ansible.builtin.dnf:
       name: nginx
@@ -16,5 +16,3 @@
     ansible.builtin.service:
       name: nginx
       enabled: yes
-    
-
